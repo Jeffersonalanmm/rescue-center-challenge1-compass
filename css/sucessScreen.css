@@ -1,0 +1,73 @@
+*{
+    background: rgba(245, 245, 245, 1);
+}
+main,
+nav {
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+    background: var(--gray-light, #F5F5F5);
+}
+
+nav ul {
+    list-style: none;
+    /* Remover marcadores de lista */
+    display: flex;
+    /* Usar flexbox para centralizar horizontalmente */
+    justify-content: center;
+    /* Centralizar horizontalmente */
+    padding: 0;
+    /* Remover preenchimento padrão da lista */
+    align-items: center;
+    gap: 20px;
+    background: var(--gray-light, #F5F5F5);
+    margin: 0;
+}
+
+nav ul li {
+    color: var(--black, #1E1F27);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 160% */
+}
+
+.donate {
+    border-radius: 32px;
+    height: 64px;
+    padding: 16px 28px 16px 32px;
+    justify-content: center;
+    gap: 8px;
+    background: var(--pink, #FF3D9A);
+    color: var(--white, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 160% */
+    background-image: url("../images/icon.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    /* Posição à esquerda do texto */
+    padding-left: 20px;
+    /* Espaçamento à esquerda para a imagem */
+
+}
+
+section .donate {
+    margin-right: 10px;
+    /* Adiciona um espaçamento à direita do botão "Donate" */
+}
+
+.donate::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    /* Espaçamento à direita do ícone */
+}

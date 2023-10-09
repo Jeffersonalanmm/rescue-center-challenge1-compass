@@ -1,0 +1,224 @@
+*{
+    font-family: 'Poppins';
+}
+main{
+    background: rgba(30, 31, 39, 1);
+}
+nav ul {
+    list-style: none;
+    /* Remover marcadores de lista */
+    display: flex;
+    /* Usar flexbox para centralizar horizontalmente */
+    justify-content: center;
+    /* Centralizar horizontalmente */
+    padding: 0;
+    /* Remover preenchimento padrão da lista */
+    align-items: center;
+    gap: 20px;
+    background: var(--gray-light, #F5F5F5);
+    margin: 0;
+}
+
+nav ul li {
+    color: var(--black, #1E1F27);
+    background: var(--gray-light, #F5F5F5);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 160% */
+}
+
+nav ul img{
+    background: var(--gray-light, #F5F5F5);
+}
+
+main h2{
+    display:flex;
+    justify-content: center;
+    color: white;
+    margin: 0;
+}
+
+.donate {
+    border-radius: 32px;
+    height: 64px;
+    padding: 16px 28px 16px 32px;
+    justify-content: center;
+    gap: 8px;
+    background: var(--pink, #FF3D9A);
+    color: var(--white, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 160% */
+    background-image: url("../images/icon.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    /* Posição à esquerda do texto */
+    padding-left: 20px;
+    /* Espaçamento à esquerda para a imagem */
+
+}
+
+section .donate {
+    margin-right: 10px;
+    /* Adiciona um espaçamento à direita do botão "Donate" */
+}
+
+.donate::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    /* Espaçamento à direita do ícone */
+}
+
+.phoneDonate {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--gray-light, #F5F5F5);
+}
+
+.phoneDonate img {
+    margin-right: 10px;
+    margin-left: 85px;
+    background: var(--gray-light, #F5F5F5);
+}
+
+.containerPage3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    /* Center-align text */
+    padding: 20px;
+    /* Add some padding to center the text vertically */
+}
+
+.containerPage3 h1 {
+    color: white;
+    white-space: pre-line;
+    /* Maintain line breaks */
+    font-size: 32px;
+    /* Adjust the font size as needed */
+    margin: 0;
+    /* Remove default margin */
+}
+
+.containerPage3>section {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    /* Duas linhas de altura automática */
+    grid-template-columns: repeat(3, 1fr);
+    /* Três colunas de largura igual */
+    gap: 20px;
+    /* Espaçamento entre as células do grid */
+    text-align: center;
+    /* Centralize o texto dentro das células */
+    align-items: center;
+    /* Alinhe verticalmente o conteúdo no centro das células */
+    margin: 20px;
+    /* Espaçamento entre cada grupo de p's */
+}
+
+.containerPage3 .grid-item {
+    display: flex;
+    flex-direction: column;
+    /* Mantém os elementos em linha horizontal */
+    padding: 36px;
+    gap: 10px;
+}
+
+.containerPage3 .grid-item-content {
+    display: flex;
+    flex-direction: row;
+    /* Coloca o h2 e a imagem em uma coluna vertical */
+    align-items: center;
+    gap: 30px;
+    /* Adicione o espaçamento desejado entre o h2 e a imagem */
+}
+
+.containerPage3 .grid-item h2 {
+    color: var(--white, #FFF);
+    font-size: 32px;
+    margin: 0;
+}
+
+.containerPage3 .grid-item p {
+    color: var(--white, #FFF);
+    /* Outros estilos para o texto, se necessário */
+}
+
+
+.containerPage3 h2 {
+    color: var(--white, #FFF);
+    font-size: 32px;
+    margin: 0;
+    margin-right: 20px;
+}
+
+.containerPage3 .grid-item p {
+    text-align: left;
+    /* Alinha o texto à esquerda */
+}
+
+.more-btn {
+    height: 64px;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 32px;
+    border: 2px;
+    background: rgba(255, 61, 154, 1);
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 700;
+    background-image: url("../images/Shape.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    /* Posição à esquerda do texto */
+    padding-left: 20px;
+    /* Espaçamento à esquerda para a imagem */
+    color:white;
+}
+
+.footer{
+    background: var(--gray-light, #F5F5F5);
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container-imgh1 {
+    white-space: pre-line;
+}
+
+.container-imgh1 h1 {
+    display: flex;
+    align-items: center;
+    /* Vertically align items */
+}
+
+.container-imgh1 h1 img {
+    margin-left: 10px;
+    /* Add spacing between text and image */
+}
+
+.name-pets{
+    display: flex;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 51px;
+    letter-spacing: -0.02em;
+    justify-content: center;
+    color: rgba(255, 255, 255, 1);
+    margin:0;
+}

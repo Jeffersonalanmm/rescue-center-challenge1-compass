@@ -1,0 +1,999 @@
+* {
+    font-family: 'Poppins';
+
+}
+
+main,
+nav {
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+    background: var(--gray-light, #F5F5F5);
+}
+
+nav ul {
+    list-style: none;
+    /* Remover marcadores de lista */
+    display: flex;
+    /* Usar flexbox para centralizar horizontalmente */
+    justify-content: center;
+    /* Centralizar horizontalmente */
+    padding: 0;
+    /* Remover preenchimento padrão da lista */
+    align-items: center;
+    gap: 20px;
+    background: var(--gray-light, #F5F5F5);
+    margin: 0;
+}
+
+nav ul li {
+    color: var(--black, #1E1F27);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 160% */
+}
+
+.border {
+    width: 80%;
+    /* Largura da barra preta */
+    height: 2px;
+    /* Altura da barra preta */
+    background-color: black;
+    /* Cor da barra preta */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+}
+
+p {
+    /* Espaçamento entre linhas desejado */
+    white-space: pre-line;
+    /* Manter quebras de linha */
+}
+
+.titulo {
+    color: var(--black, #1E1F27);
+    font-feature-settings: 'ss06' on, 'ss05' on, 'ss04' on, 'ss03' on, 'ss02' on;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    /* 76.8px */
+    letter-spacing: -1.28px;
+}
+
+.titulo {
+    margin-bottom: 10px;
+    /* Adicione uma margem inferior menor ao título */
+}
+
+.description {
+    margin-top: 10px;
+    /* Adicione uma margem superior menor ao parágrafo */
+}
+
+.containerPage1 {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+}
+
+.containerPage1 h1{
+    white-space: pre-line;
+}
+
+.description {
+    color: var(--gray-dark, #37383F);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    /* 38.4px */
+}
+
+.apply-modal{
+    padding: 16px 32px;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 32px;
+    border: 2px solid var(--black, #1E1F27);
+    color: var(--black, #1E1F27);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 140% */
+    background-repeat: no-repeat;
+    background-position: left center;
+    /* Posição à esquerda do texto */
+    padding-left: 20px;
+    /* Espaçamento à esquerda para a imagem */
+    margin-left: 10px;
+    background: transparent;
+    color: white;
+    /* Adiciona um espaçamento à esquerda do botão "Apply to Adopt" */
+    border: 2px solid white;
+}
+
+section h3 {
+    align-self: stretch;
+    color: var(--black, #1E1F27);
+    font-feature-settings: 'ss06' on, 'ss05' on, 'ss04' on, 'ss03' on, 'ss02' on;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    /* 51.2px */
+    letter-spacing: -0.64px;
+}
+
+section h3 button {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.donate {
+    border-radius: 32px;
+    height: 64px;
+    padding: 16px 28px 16px 32px;
+    justify-content: center;
+    gap: 8px;
+    background: var(--pink, #FF3D9A);
+    color: var(--white, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 160% */
+    background-image: url("../images/icon.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    /* Posição à esquerda do texto */
+    padding-left: 20px;
+    /* Espaçamento à esquerda para a imagem */
+
+}
+
+.phoneDonate {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.phoneDonate img {
+    margin-right: 10px;
+    margin-left: 85px;
+}
+
+.apply {
+    height: 64px;
+    padding: 16px 32px;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 32px;
+    border: 2px solid var(--black, #1E1F27);
+    color: var(--black, #1E1F27);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 140% */
+    background-image: url("../images/Shape.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    /* Posição à esquerda do texto */
+    padding-left: 20px;
+    /* Espaçamento à esquerda para a imagem */
+}
+
+section .donate {
+    margin-right: 10px;
+    /* Adiciona um espaçamento à direita do botão "Donate" */
+}
+
+.donate::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    /* Espaçamento à direita do ícone */
+}
+
+.apply::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    /* Espaçamento à direita do ícone */
+}
+
+.background {
+    background-color: #1E1F27;
+}
+
+.background h1,
+.background p,
+.background h5 {
+    color: white;
+}
+
+.background h1 {
+    font-size: 56px;
+    text-align: center;
+    white-space: pre-line;
+    /* Manter quebras de linha */
+}
+
+.container {
+    display: flex;
+    width: 376px;
+    height: 144px;
+    gap: 16px;
+    margin-bottom: 800px;
+}
+
+.highlighted-text {
+    white-space: nowrap;
+    /* Impede que o texto quebre a linha */
+    color: var(--yellow, #F8DB46);
+    text-align: center;
+    font-feature-settings: 'ss06' on, 'ss05' on, 'ss04' on, 'ss03' on, 'ss02' on;
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    /* 76.8px */
+    letter-spacing: -1.28px;
+}
+
+.divs {
+    display: block;
+    /* Define as divs como elementos de bloco */
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    /* 51.2px */
+    letter-spacing: -0.64px;
+    margin-top: 10px;
+}
+
+.containerPage2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    /* Center-align text */
+    padding: 20px;
+    /* Add some padding to center the text vertically */
+}
+
+.containerPage2 h1 {
+    color: white;
+    white-space: pre-line;
+    /* Maintain line breaks */
+    font-size: 32px;
+    /* Adjust the font size as needed */
+    margin: 0;
+    /* Remove default margin */
+}
+
+.containerTexts {
+    display: flex;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    /* Largura máxima do carrossel */
+    margin: 0 auto;
+    padding: 0 20px; /* Adicione um padding de 20 pixels nos lados para afastar os botões das imagens */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap:20px;
+    /* Adiciona uma transição suave */
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+#prevBtn {
+    position: absolute;
+    left: 0;
+    /* Position the button to the left */
+    top: 50%;
+    /* Vertically center the button */
+    transform: translateY(-50%);
+    /* Adjust vertical position */
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    background: var(--gray-light, #F5F5F5);
+}
+
+#nextBtn {
+    position: absolute;
+    right: 0;
+    /* Position the button to the right */
+    top: 50%;
+    /* Vertically center the button */
+    transform: translateY(-50%);
+    /* Adjust vertical position */
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    background: var(--gray-light, #F5F5F5);
+}
+
+#prevBtn,
+#nextBtn {
+    margin: 0 10px; /* Adicione margem horizontal para afastar os botões das imagens */
+}
+
+.containerPage3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    /* Center-align text */
+    padding: 20px;
+    /* Add some padding to center the text vertically */
+}
+
+.containerPage3 h1 {
+    color: white;
+    white-space: pre-line;
+    /* Maintain line breaks */
+    font-size: 32px;
+    /* Adjust the font size as needed */
+    margin: 0;
+    /* Remove default margin */
+}
+
+.containerPage3>section {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    /* Duas linhas de altura automática */
+    grid-template-columns: repeat(3, 1fr);
+    /* Três colunas de largura igual */
+    gap: 20px;
+    /* Espaçamento entre as células do grid */
+    text-align: center;
+    /* Centralize o texto dentro das células */
+    align-items: center;
+    /* Alinhe verticalmente o conteúdo no centro das células */
+    margin: 20px;
+    /* Espaçamento entre cada grupo de p's */
+}
+
+.containerPage3 .grid-item {
+    display: flex;
+    flex-direction: column;
+    /* Mantém os elementos em linha horizontal */
+    border-radius: 24px;
+    border: 2px solid var(--white, #FFF);
+    padding: 36px;
+    gap: 10px;
+}
+
+.containerPage3 .grid-item-content {
+    display: flex;
+    flex-direction: row;
+    /* Coloca o h2 e a imagem em uma coluna vertical */
+    align-items: center;
+    gap: 30px;
+    /* Adicione o espaçamento desejado entre o h2 e a imagem */
+}
+
+.containerPage3 .grid-item h2 {
+    color: var(--white, #FFF);
+    font-size: 32px;
+    margin: 0;
+}
+
+.containerPage3 .grid-item p {
+    color: var(--white, #FFF);
+    /* Outros estilos para o texto, se necessário */
+}
+
+
+.containerPage3 h2 {
+    color: var(--white, #FFF);
+    font-size: 32px;
+    margin: 0;
+    margin-right: 20px;
+}
+
+.containerPage3 .grid-item p {
+    text-align: left;
+    /* Alinha o texto à esquerda */
+}
+
+section h5 {
+    font-size: 32px;
+    letter-spacing: -0.02em;
+    margin: 0;
+}
+
+.apply-custom {
+    height: 64px;
+    padding: 16px 32px;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 32px;
+    border: 2px solid var(--black, #1E1F27);
+    width: Hug (223px);
+    background: var(--black, #1E1F27);
+    color: var(--white, #FFF);
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+section h5 ul li {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.containerPage4 {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+}
+
+.containerPage5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    /* Center-align text */
+    padding: 20px;
+    /* Add some padding to center the text vertically */
+}
+
+.containerPage5 h1 {
+    color: white;
+    white-space: pre-line;
+    /* Maintain line breaks */
+    font-size: 32px;
+    /* Adjust the font size as needed */
+    margin: 0;
+    /* Remove default margin */
+}
+
+.containerPage5>section {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    /* Duas linhas de altura automática */
+    grid-template-columns: repeat(3, 1fr);
+    /* Três colunas de largura igual */
+    gap: 20px;
+    /* Espaçamento entre as células do grid */
+    text-align: center;
+    /* Centralize o texto dentro das células */
+    align-items: center;
+    /* Alinhe verticalmente o conteúdo no centro das células */
+    margin: 20px;
+    /* Espaçamento entre cada grupo de p's */
+}
+
+.containerPage5 .grid-item {
+    display: flex;
+    flex-direction: column;
+    /* Mantém os elementos em linha horizontal */
+    border-radius: 24px;
+    border: 2px solid var(--white, #FFF);
+    padding: 36px;
+    gap: 10px;
+}
+
+.containerPage5 .grid-item-content {
+    display: flex;
+    flex-direction: row;
+    /* Coloca o h2 e a imagem em uma coluna vertical */
+    align-items: center;
+    gap: 30px;
+    /* Adicione o espaçamento desejado entre o h2 e a imagem */
+}
+
+.containerPage5 .grid-item h1 {
+    color: var(--white, #FFF);
+    font-size: 32px;
+    margin: 0;
+}
+
+.containerPage5 .grid-item p {
+    text-align: center;
+}
+
+.btn-page5{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.btn1{
+    background: rgba(4, 194, 127, 1);
+
+}
+
+.btn2{
+    background: rgba(241, 208, 110, 1);
+
+}
+
+.btn3{
+    background: rgba(255, 61, 154, 1);
+
+}
+
+.btn4{
+    background: rgba(87, 88, 241, 1);
+
+}
+
+/* Classe para imagem à esquerda */
+.left-image {
+    float: left; /* Faz a imagem flutuar à esquerda */
+    margin-right: 20px; /* Adiciona um espaçamento à direita para separar da próxima seção */
+}
+
+/* Classe para imagem à direita */
+.right-image {
+    float: right; /* Faz a imagem flutuar à direita */
+    margin-left: 20px; /* Adiciona um espaçamento à esquerda para separar da próxima seção */
+}
+
+.background-newsletter {
+    display: flex;
+    background: rgba(87, 88, 241, 1);
+    justify-content: center;
+    height: 431px;
+}
+
+#email {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    width: 395px;
+    height: 64px;
+    padding: 4px 146px 4px 24px;
+    border-radius: 32px;
+    border: 2px solid var(--white, #FFF);
+    background: rgba(255, 255, 255, 0.5);
+    background-color: rgba(87, 88, 241, 1);
+    gap: 8px;
+}
+
+#email::placeholder {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#btn-sub {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    width: 170px;
+    height: 64px;
+    padding: 16px, 32px, 16px, 32px;
+    border-radius: 32px;
+    gap: 8px;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 1);
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    gap:24px;
+    align-items: center;
+}
+
+.container-newsletter p{
+    text-align: center;
+}
+
+.texth2 {
+    margin:0;
+    color: var(--white, #FFF);
+}
+
+.textBest {
+    color: rgba(248, 219, 70, 1);
+}
+
+.texth2,
+.textBest {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 67px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.container-browse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-browse h3{
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 51px;
+    letter-spacing: -0.02em;
+    text-align: center;    
+}
+
+.container-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container-newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+section div h2 p{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.container-newsletter h2{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 67px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+.view-adoptables {
+    color:#000;
+    width: 238px;
+    height: 64px;
+    border-radius: 32px;
+    gap: 8px;
+    background: rgba(248, 219, 70, 1);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+.footer .border{
+    width: 100%;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.container-imgh1 {
+    white-space: pre-line;
+    margin:0;
+}
+
+.container-imgh1 h1 {
+    display: flex;
+    align-items: center;
+    /* Vertically align items */
+}
+
+.container-imgh1 h1 img {
+    margin-left: 10px;
+    /* Add spacing between text and image */
+}
+
+.container-imgh1 p{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin:0;
+}
+
+.final-phrasal{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 51px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.colored{
+    color: #FF3D9A;    
+}
+
+.topics{
+    display:inline;
+    align-items: center;
+    gap: 10px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+/* Estilo para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+}
+
+.modal h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.modal label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.modal input[type="email"],
+.modal input[type="text"] {
+    width: 384px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal .payment-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.modal .payment-options label{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 5px;
+    color:#000;
+    cursor: pointer;
+    text-align: left;
+}
+
+
+.modal-content-apply {
+    width: max-content;
+    height: max-content;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para os elementos do modal */
+h1 {
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.date-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.privacy-policy {
+    margin-top: 10px;
+}
+
+#helpButton{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(255, 61, 154, 1);
+    border-radius: 20px;
+}
+/* Estilos para o botão "I wanna adopt" */
+.adopt-button {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 384px;
+    height: 64px;
+    padding: 16px, 24px, 16px, 24px;
+    border-radius: 8px;
+    gap: 8px;
+    background: rgba(4, 194, 127, 1);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+/* Estilos para o botão "Cancel" */
+.cancel-button {
+    width: 384px;
+    height: 64px;
+    padding: 16px, 24px, 16px, 24px;
+    border-radius: 8px;
+    gap: 8px;    
+    background: rgba(55, 56, 63, 1);
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+#cancelButton {
+    background: rgba(55, 56, 63, 1);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+/* Estilo para o contêiner dos selects */
+.date-container {
+    display: flex;
+    align-items: center; /* Alinhar elementos verticalmente */
+}
+
+/* Estilo para os selects */
+.date-select {
+    margin-right: 10px; /* Espaçamento entre os selects */
+}
+
+#bg{
+    height: 431px;
+}
+
+.container-btns-modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+
+#email-modal, #amount{
+    width: 384px;
+    border-radius: 8px;
+    border: 1px solid black;
+    gap: 10px;
+}
+
+.modal-content label{
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FF3D9A;
+}
