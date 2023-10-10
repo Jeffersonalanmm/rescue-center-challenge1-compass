@@ -1,5 +1,6 @@
 *{
     background: rgba(245, 245, 245, 1);
+    font-family: 'Poppins';
 }
 main,
 nav {
@@ -28,7 +29,6 @@ nav ul {
 nav ul li {
     color: var(--black, #1E1F27);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: 'Poppins';
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -45,7 +45,6 @@ nav ul li {
     background: var(--pink, #FF3D9A);
     color: var(--white, #FFF);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: 'Poppins';
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -70,4 +69,40 @@ section .donate {
     display: inline-block;
     width: 20px;
     /* Espaçamento à direita do ícone */
+}
+
+section button{
+    width: 156px;
+    height: 64px;
+    padding: 16px, 32px, 16px, 32px;
+    border-radius: 32px;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: white;
+    background: rgba(55, 56, 63, 1);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+
+section h1{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.border {
+    width: 80%;
+    height: 2px;
+    background-color: black;
+    margin: 0 auto;
 }

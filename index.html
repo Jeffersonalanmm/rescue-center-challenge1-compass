@@ -8,8 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/carousel.js"></script>
-    <script src="../js/modal.js"></script>
 </head>
 
 <body>
@@ -341,40 +339,11 @@
                     </label>
                 </div>
                 <div class="container-btns-modal">
-                    <a href="sucessScreen.html"><button id="helpButton" >I wanna help!</button></a>
+                    <a href="successScreen.html"><button id="helpButton" >I wanna help!</button></a>
                     <button id="cancelButton" onclick="closeModal()">Cancel</button>
                 </div>
             </div>
         </div>
-
-        <script>
-            // Função para mostrar o modal de doação
-            function showModal() {
-                const modal = document.getElementById("donateModal");
-                modal.style.display = "block";
-            }
-
-            // Função para fechar o modal de doação
-            function closeModal() {
-                const modal = document.getElementById("donateModal");
-                modal.style.display = "none";
-            }
-
-            // Event listener para abrir o modal quando um botão "Donate" é clicado
-            const donateButtons = document.querySelectorAll(".donate-button");
-            donateButtons.forEach(function (button) {
-                button.addEventListener("click", showModal);
-            });
-
-            // Event listener para fechar o modal quando o botão "Cancelar" é clicado
-            const cancelButton = document.getElementById("cancelButton");
-            cancelButton.addEventListener("click", closeModal);
-
-            // Event listener para fechar o modal quando o botão "X" no canto superior direito é clicado
-            const closeButton = document.getElementById("closeButton");
-            closeButton.addEventListener("click", closeModal);
-        </script>
-
     </div>
 
     <div>
@@ -406,13 +375,144 @@
                     </label>
                 </div>
                 <div class="container-btns-modal">
-                    <a href="sucessScreen.html"><button class="adopt-button" id="adopt-button">I wanna adopt</button></a>
+                    <a href="successScreen.html"><button class="adopt-button" id="adopt-button">I wanna adopt</button></a>
                     <button class="cancel-button" id="closeModal">Cancel</button>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        // Função para mostrar o modal de doação
+        function showModal() {
+            const modal = document.getElementById("donateModal");
+            modal.style.display = "block";
+        }
 
+        // Função para fechar o modal de doação
+        function closeModal() {
+            const modal = document.getElementById("donateModal");
+            modal.style.display = "none";
+        }
+
+        // Event listener para abrir o modal quando um botão "Donate" é clicado
+        const donateButtons = document.querySelectorAll(".donate-button");
+        donateButtons.forEach(function (button) {
+            button.addEventListener("click", showModal);
+        });
+
+        // Event listener para fechar o modal quando o botão "Cancelar" é clicado
+        const cancelButton = document.getElementById("cancelButton");
+        cancelButton.addEventListener("click", closeModal);
+
+        // Event listener para fechar o modal quando o botão "X" no canto superior direito é clicado
+        const closeButton = document.getElementById("closeButton");
+        closeButton.addEventListener("click", closeModal);
+    </script>
+
+    <script>
+        // Função para mostrar o modal de aplicação de adoção
+        function showAdoptionModal() {
+            const modal = document.getElementById("myModal");
+            modal.style.display = "block";
+        }
+
+        // Função para fechar o modal de aplicação de adoção
+        function closeAdoptionModal() {
+            const modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+
+        // Event listener para abrir o modal de aplicação de adoção quando um botão "Apply to Adopt" é clicado
+        const applyButtons = document.querySelectorAll(".apply");
+        applyButtons.forEach(function (button) {
+            button.addEventListener("click", showAdoptionModal);
+        });
+        // Event listener para abrir o modal de aplicação de adoção personalizado quando o botão "Apply to Adopt" personalizado é clicado
+        const customApplyButton = document.getElementById("openModal2");
+        customApplyButton.addEventListener("click", showAdoptionModal);
+
+        // Event listener para fechar o modal de aplicação de adoção quando o botão "Cancelar" é clicado ou quando o botão "X" no canto superior direito é clicado
+        const closeAdoptionButton = document.getElementById("closeModal");
+        closeAdoptionButton.addEventListener("click", closeAdoptionModal);
+        function populateDays() {
+            const daySelect = document.getElementById("day");
+
+            for (let i = 1; i <= 31; i++) {
+                const option = document.createElement("option");
+                option.value = i;
+                option.text = i;
+                daySelect.appendChild(option);
+            }
+        }
+
+        // Função para gerar as opções de mês
+        function populateMonths() {
+            const monthSelect = document.getElementById("month");
+
+            const months = [
+                "January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"
+            ];
+
+            for (let i = 0; i < months.length; i++) {
+                const option = document.createElement("option");
+                option.value = months[i];
+                option.text = months[i];
+                monthSelect.appendChild(option);
+            }
+        }
+
+        // Função para gerar as opções de ano (por exemplo, de 1900 a 2023)
+        function populateYears() {
+            const yearSelect = document.getElementById("year");
+            const currentYear = new Date().getFullYear();
+
+            for (let year = 1900; year <= currentYear; year++) {
+                const option = document.createElement("option");
+                option.value = year;
+                option.text = year;
+                yearSelect.appendChild(option);
+            }
+        }
+
+        // Chame as funções para preencher as opções
+        populateDays();
+        populateMonths();
+        populateYears();
+        // Event listener para fechar o modal de aplicação de adoção quando clicar fora do modal
+        window.addEventListener('click', (event) => {
+            const modal = document.getElementById("myModal");
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+    <script>
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        const carousel = document.querySelector(".carousel");
+        const images = document.querySelectorAll(".carousel img");
+
+        let currentIndex = 0;
+
+        prevBtn.addEventListener("click", () => {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateCarousel();
+        });
+
+        nextBtn.addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateCarousel();
+        });
+
+        function updateCarousel() {
+            const offset = -currentIndex * 100;
+            carousel.style.transform = `translateX(${offset}%)`;
+        }
+
+        // Adicione este código para iniciar o carrossel na primeira imagem
+        updateCarousel();
+    </script>
 </body>
 
 </html>

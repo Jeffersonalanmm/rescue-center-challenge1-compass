@@ -2,6 +2,9 @@
     font-family: 'Poppins';
 }
 main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background: rgba(30, 31, 39, 1);
 }
 nav ul {
@@ -129,11 +132,7 @@ section .donate {
 }
 
 .containerPage3 .grid-item {
-    display: flex;
-    flex-direction: column;
-    /* Mantém os elementos em linha horizontal */
     padding: 36px;
-    gap: 10px;
 }
 
 .containerPage3 .grid-item-content {
@@ -221,4 +220,90 @@ section .donate {
     justify-content: center;
     color: rgba(255, 255, 255, 1);
     margin:0;
+}
+
+main button{
+    width: 156px;
+    height: 64px;
+    padding: 16px, 32px, 16px, 32px;
+    border-radius: 32px;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: white;
+    background: rgba(55, 56, 63, 1);
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+.footer .border{
+    width: 100%;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.container-imgh1 {
+    white-space: pre-line;
+    margin:0;
+}
+
+.container-imgh1 h1 {
+    display: flex;
+    align-items: center;
+    /* Vertically align items */
+}
+
+.container-imgh1 h1 img {
+    margin-left: 10px;
+    /* Add spacing between text and image */
+}
+
+.container-imgh1 p{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin:0;
+}
+
+.final-phrasal{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 51px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.colored{
+    color: #FF3D9A;    
+}
+
+.topics{
+    display:inline;
+    align-items: center;
+    gap: 10px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+.border {
+    width: 80%;
+    height: 2px;
+    background-color: black;
+    margin: 0 auto;
 }
